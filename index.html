@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Registon Oshxona — onlayn menyu</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <h1>Registon Oshxona</h1>
+  <p>Samarqand oshlari, tandir somsa va shirinliklar. Menyudan tanlang, buyurtmani Telegram orqali yuboring.</p>
+  <div class="facts"><span>Har kuni 10:00–23:00</span><span>Yetkazish 40 daqiqa</span><span>Registon ko'chasi, 12</span></div>
+</div></header>
+
+<nav class="tabs" aria-label="Menyu bo'limlari"><div class="wrap" id="tabs"></div></nav>
+<main><div class="wrap"><div class="grid" id="grid"></div></div></main>
+
+<div class="bar" id="bar" hidden><div class="wrap">
+  <div><strong id="cnt">0</strong> ta taom · <strong id="sum">0</strong> so'm</div>
+  <button class="btn" id="open">Buyurtmani ko'rish</button>
+</div></div>
+
+<dialog id="dlg">
+  <h2>Sizning buyurtmangiz</h2>
+  <div id="lines"></div>
+  <label class="field">Ismingiz<input id="name" autocomplete="name"></label>
+  <label class="field">Telefon yoki manzil<input id="addr" autocomplete="street-address"></label>
+  <div class="total"><span>Jami</span><span id="tot"></span></div>
+  <div class="actions">
+    <a class="btn" id="send" target="_blank" rel="noopener">Telegramga yuborish</a>
+    <button class="btn ghost" id="close">Yopish</button>
+  </div>
+</dialog>
+<footer>Registon Oshxona · Samarqand</footer>
+
+<script src="./main.js"></script>
+
+</body>
+</html>
